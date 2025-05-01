@@ -18,7 +18,7 @@ const ProfilePage = () => {
     return (
       <div className="text-white my-60 flex flex-col items-center justify-center text-center px-4">
         <User size={48} className="text-gray-500 mb-4" />
-        <h2 className="text-xl font-semibold mb-2">You're not logged in</h2>
+        <h2 className="text-xl font-semibold mb-2">You&#39;re not logged in</h2>
         <p className="">Please sign in to view your profile.</p>
         <button  className="bg-green-500 mt-2 mx-30 cursor-pointer text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-green-600 transition"
        onClick={()=>{
