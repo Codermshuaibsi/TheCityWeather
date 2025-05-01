@@ -21,7 +21,7 @@ const ProfilePage = () => {
         <p className="mb-4">Please sign in to view your profile.</p>
         <button
           onClick={() => router.push('/')}
-          className="bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600 transition"
+          className="bg-green-500 text-white px-6 py-2 sm:mt-30 rounded-md hover:bg-green-600 transition"
         >
           Sign In Now
         </button>
