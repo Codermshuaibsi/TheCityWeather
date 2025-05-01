@@ -3,6 +3,7 @@ import React from 'react';
 import { useSession, signOut } from 'next-auth/react';
 import { User, Mail, LogOut } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 
 const ProfilePage = () => {
@@ -32,11 +33,13 @@ const ProfilePage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12  text-white">
       <div className="w-fit  rounded-xl shadow-lg p-8 text-center">
-        <img
-          src={user?.image || '/default-avatar.png'}
-          alt="User Profile"
-          className="w-24 h-24 rounded-full mx-auto mb-4 border"
-        />
+        <Image
+            src={user?.image || '/default-avatar.png'}
+            alt="User Profile"
+            fill
+            className="object-cover rounded-full"
+            priority
+          />
         <h2 className="text-2xl font-bold mb-2 flex justify-center items-center gap-2">
           <User size={20} />
           {user?.name || 'No Name'}
